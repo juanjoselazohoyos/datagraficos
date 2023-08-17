@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ver Gráfico</title>
+</head>
+<body>
+    <h2>Gráfico de las primeras 2 columnas:</h2>
+    <img src="data:image/png;base64,{{ graph }}" alt="Gráfico">
+    <br>
+    <a href="{{ url_for('download', graph=graph) }}" download="grafico.png">Descargar Gráfico</a>
+    <br><br>
+    <a href="/">Volver al inicio</a>
+</body>
+</html>
